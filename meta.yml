@@ -4,7 +4,7 @@ package:
 
 source:
   url: https://github.com/AnasAito/SkillNER/archive/refs/tags/v1.0.3.tar.gz
-  sha256: 064e3d7915a5e6d41d6b2890be0bfc9e30a8f8ddd08cc28ce75478bbea2517ad
+  sha256: a5f5c5de68f02eb9c73bc5e894c73ec9cf740096bd2656d1c10d1cf6020eab00
 
 build:
   script: python -m pip install --no-deps --ignore-installed .
