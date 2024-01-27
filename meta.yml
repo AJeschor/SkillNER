@@ -1,0 +1,46 @@
+package:
+  name: skillner
+  version: 1.0.3
+
+source:
+  url: https://github.com/AnasAito/SkillNER/archive/refs/tags/v1.0.3.tar.gz
+  sha256: 064e3d7915a5e6d41d6b2890be0bfc9e30a8f8ddd08cc28ce75478bbea2517ad
+
+build:
+  script: python -m pip install --no-deps --ignore-installed .
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+    - ipython
+    - pandas
+    - nltk
+    - spacy
+    - jellyfish
+    - scipy
+    - numpy
+    - matplotlib
+    - plotly
+    - sphinx
+    - furo
+    - sphinx-copybutton
+    - twine
+
+test:
+  imports:
+    - skillNer
+
+about:
+  home: https://github.com/AnasAito/SkillNER
+  license: MIT
+  summary: An NLP module to automatically extract skills and certifications from unstructured job postings, texts, and applicant's resumes.
+  description: |
+    SkillNER is an NLP module designed for the automatic extraction of skills and certifications from unstructured job postings, texts, and applicant's resumes. It utilizes various libraries such as NLTK, spaCy, and Jellyfish to perform Named Entity Recognition (NER) and enhance the efficiency of skill extraction.
+
+extra:
+  recipe-maintainers:
+    - Anas Ait AOMAR
+    - Badr MOUFAD
